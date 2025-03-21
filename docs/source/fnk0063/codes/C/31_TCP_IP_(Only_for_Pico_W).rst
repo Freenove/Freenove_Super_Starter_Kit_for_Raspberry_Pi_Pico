@@ -63,7 +63,7 @@ Unzip the downloaded file to your computer. Click "processing.exe" as the figure
 Use Server mode for communication
 --------------------------------------
 
-Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_31.1_WiFiClient\\sketchWiFi\\sketchWiFi.pde** ", and click "Run".
+Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_22.1_WiFiClient\\sketchWiFi\\sketchWiFi.pde** ", and click "Run".
 
 The new pop-up interface is as follows. If PICO W is used as client, select TCP SERVER mode for sketchWiFi.
 
@@ -155,7 +155,7 @@ Click LISTENING, turn on TCP SERVER's data listening function and wait for PICO 
 .. image:: ../_static/imgs/31_TCP_IP_(Only_for_Pico_W)/Chapter31_13.png
     :align: center
 
-Next, open Sketch_31.1_WiFiClient.ino. Before running it, please change the following information based on "LOCAL IP" and "LOCAL PORT" in the figure above. 
+Next, open Sketch_22.1_WiFiClient.ino. Before running it, please change the following information based on "LOCAL IP" and "LOCAL PORT" in the figure above. 
 
 .. image:: ../_static/imgs/31_TCP_IP_(Only_for_Pico_W)/Chapter31_14.png
     :align: center
@@ -176,15 +176,15 @@ At this point, you can send data to Pico W through sketchWiFi. Pico W will send 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
-    :lines: 1-60
+    :lines: 1-59
     :dedent:
 
 Add WiFi function header file.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 7-7
@@ -192,7 +192,7 @@ Add WiFi function header file.
 
 Enter the actual router name, password, remote server IP address, and port number.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 9-12
@@ -200,7 +200,7 @@ Enter the actual router name, password, remote server IP address, and port numbe
 
 Apply for the method class of WiFiClient.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 13-13
@@ -208,7 +208,7 @@ Apply for the method class of WiFiClient.
 
 Connect specified WiFi until it is successful. If the name and password of WiFi are correct but it still fails to connect. Please disconnect the power supply and try again several times.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 19-24
@@ -216,7 +216,7 @@ Connect specified WiFi until it is successful. If the name and password of WiFi 
 
 Send connection request to remote server until connect successfully. When connect successfully, print out the connecting prompt on the serial monitor and send messages to remote server.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 34-39
@@ -224,7 +224,7 @@ Send connection request to remote server until connect successfully. When connec
 
 When PICO W receive messages from servers, it will print them out via serial port; Users can also send messages to servers from serial port.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 44-54
@@ -232,7 +232,7 @@ When PICO W receive messages from servers, it will print them out via serial por
 
 If the server is disconnected, turn off WiFi of PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.1_WiFiClient/Sketch_31.1_WiFiClient.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_WiFiClient/Sketch_22.1_WiFiClient.ino    
     :linenos: 
     :language: c
     :lines: 55-58
@@ -279,9 +279,6 @@ Component List
 | |Chapter01_08|                          | |Chapter01_09|                           |
 +-----------------------------------------+------------------------------------------+
 
-.. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
-.. |Chapter01_09| image:: ../_static/imgs/1_LED/Chapter01_09.png
-
 Circuit
 ============================
 
@@ -315,7 +312,7 @@ Serial Monitor
 
 Processing: 
 
-Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_31.2_WiFiServer\\sketchWiFi\\sketchWiFi.pde** ".
+Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_22.2_WiFiServer\\sketchWiFi\\sketchWiFi.pde** ".
 
 Based on the messages printed by the serial monitor, enter correct IP address and serial port in Processing to establish connection and make communication. 
 
@@ -324,7 +321,7 @@ Based on the messages printed by the serial monitor, enter correct IP address an
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 1-52
@@ -332,7 +329,7 @@ The following is the program code:
 
 Apply for method class of WiFiServer.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 13-13
@@ -340,7 +337,7 @@ Apply for method class of WiFiServer.
 
 Connect specified WiFi until it is successful. If the name and password of WiFi are correct but it still fails to connect, please disconnect the power supply and try again several times.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 20-28
@@ -348,7 +345,7 @@ Connect specified WiFi until it is successful. If the name and password of WiFi 
 
 Print out the IP address and port number of PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 29-31
@@ -356,7 +353,7 @@ Print out the IP address and port number of PICO W.
 
 Turn on server mode of PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 32-32
@@ -364,7 +361,7 @@ Turn on server mode of PICO W.
 
 When PICO W receive messages from servers, it will print them out via serial port; Users can also send messages to servers from serial port.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_31.2_WiFiServer/Sketch_31.2_WiFiServer.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_WiFiServer/Sketch_22.2_WiFiServer.ino    
     :linenos: 
     :language: c
     :lines: 40-47

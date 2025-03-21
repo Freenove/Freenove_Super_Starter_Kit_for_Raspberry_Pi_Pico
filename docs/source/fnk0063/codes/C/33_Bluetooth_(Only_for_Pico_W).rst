@@ -119,7 +119,7 @@ When the computer receives it, input "Hi" at the Message bar and hit Enter key t
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.1_Serial_BT/Sketch_33.1_Serial_BT.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.1_Serial_BT/Sketch_24.1_Serial_BT.ino    
     :linenos: 
     :language: c
     :lines: 1-21
@@ -161,9 +161,6 @@ Component List
 |                                         |                                          |
 | |Chapter01_08|                          | |Chapter01_09|                           |
 +-----------------------------------------+------------------------------------------+
-
-.. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
-.. |Chapter01_09| image:: ../_static/imgs/1_LED/Chapter01_09.png
 
 Circuit
 ===========================
@@ -231,7 +228,7 @@ iPhone:https://apps.apple.com/us/app/lightblue/id557428110?platform=iphone
 .. image:: ../_static/imgs/33_Bluetooth_(Only_for_Pico_W)/Chapter33_16.png
     :align: center
 
-Step 1. Upload sketch 33.1 to Pico W.
+Step 1. Upload sketch 24.1 to Pico W.
 
 Step 2. Open Serial Monitor.
 
@@ -282,7 +279,7 @@ Now the data can be transfer between your phone and pico W.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 1-129
@@ -290,7 +287,7 @@ The following is the program code:
 
 Define the specified UUID number for BLE vendor.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 27-33
@@ -298,7 +295,7 @@ Define the specified UUID number for BLE vendor.
 
 Write a Callback function for the BLE server to manage BLE connections.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 72-77
@@ -306,7 +303,7 @@ Write a Callback function for the BLE server to manage BLE connections.
 
 Write a Callback function for the BLE server to handle BLE disconnections.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 79-84
@@ -314,7 +311,7 @@ Write a Callback function for the BLE server to handle BLE disconnections.
 
 Write a Callback function to read data. When BLE needs to read data, print the read data on the phone.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 86-102
@@ -322,7 +319,7 @@ Write a Callback function to read data. When BLE needs to read data, print the r
 
 Create a Callback function for writing data. When data is written to BLE, check if it is the CCCD characteristic handle or a write characteristic handle. If it is the CCCD, it indicates a subscription state; otherwise, print the written data to the serial console.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 104-121
@@ -330,7 +327,7 @@ Create a Callback function for writing data. When data is written to BLE, check 
 
 Write a function to send subscription notifications. When data is received through the serial port, send a notification to let BLE receive the data.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 123-129
@@ -338,7 +335,7 @@ Write a function to send subscription notifications. When data is received throu
 
 Process serial port data: Upon receiving data from the serial port, remove any leading and trailing whitespace, append a newline character to the end of the string, and then use the notification function to transmit the data to the mobile device via BLE.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 52-67
@@ -362,7 +359,7 @@ The design for creating the BLE server is:
 
 8. Start advertising.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.2_Serial_BLE/Sketch_33.2_Serial_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Serial_BLE/Sketch_24.2_Serial_BLE.ino    
     :linenos: 
     :language: c
     :lines: 20-40
@@ -427,7 +424,7 @@ Sketch_LEDControl_BT
 
 Upload the sketch to Pico W.
 
-The operation on the phone app is similar to that in Project 33.1. You just need to change the sending messages to "led_on", "led_off" and "led_toggle" to control the status of the LED.
+The operation on the phone app is similar to that in Project 24.1. You just need to change the sending messages to "led_on", "led_off" and "led_toggle" to control the status of the LED.
 
 .. image:: ../_static/imgs/33_Bluetooth_(Only_for_Pico_W)/Chapter33_31.png
     :align: center
@@ -450,7 +447,7 @@ LED status.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.3_LEDControl_BT/Sketch_33.3_LEDControl_BT.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.3_LEDControl_BT/Sketch_24.3_LEDControl_BT.ino    
     :linenos: 
     :language: c
     :lines: 1-35
@@ -458,7 +455,7 @@ The following is the program code:
 
 Define the pin of LED and set its default status as false.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.3_LEDControl_BT/Sketch_33.3_LEDControl_BT.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.3_LEDControl_BT/Sketch_24.3_LEDControl_BT.ino    
     :linenos: 
     :language: c
     :lines: 3-4
@@ -466,7 +463,7 @@ Define the pin of LED and set its default status as false.
 
 Set the LED pin to output mode.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.3_LEDControl_BT/Sketch_33.3_LEDControl_BT.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.3_LEDControl_BT/Sketch_24.3_LEDControl_BT.ino    
     :linenos: 
     :language: c
     :lines: 7-7
@@ -474,7 +471,7 @@ Set the LED pin to output mode.
 
 Process the received Bluetooth data, determine the status of the LED light. If it is "led_on", the LED light is on; if it is "led_off", the LED light is off; if it is "led_toggle", the LED status is opposite to the current status.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.3_LEDControl_BT/Sketch_33.3_LEDControl_BT.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.3_LEDControl_BT/Sketch_24.3_LEDControl_BT.ino    
     :linenos: 
     :language: c
     :lines: 18-34
@@ -541,9 +538,6 @@ Circuit
         :red:`If you need any support, please contact us via:` support@freenove.com
    * -  |Chapter33_29| 
 
-.. |Chapter33_28| image:: ../_static/imgs/33_Bluetooth_(Only_for_Pico_W)/Chapter33_28.png
-.. |Chapter33_29| image:: ../_static/imgs/33_Bluetooth_(Only_for_Pico_W)/Chapter33_29.png
-
 Sketch
 =========================
 
@@ -576,7 +570,7 @@ LED Status.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_33.4_LEDContron_BLE/Sketch_33.4_LEDContron_BLE.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.4_LEDContron_BLE/Sketch_24.4_LEDContron_BLE.ino    
     :linenos: 
     :language: c
     :lines: 1-149

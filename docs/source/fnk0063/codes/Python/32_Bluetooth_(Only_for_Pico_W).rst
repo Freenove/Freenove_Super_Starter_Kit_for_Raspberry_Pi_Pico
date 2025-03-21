@@ -72,9 +72,9 @@ Code
 
 Move the program folder " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes** " to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "32.1_BLE". Right click "ble_advertising.py" and select "Upload to /" to upload it to Pico W. Then, double click "ble.py" to open the file.
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "24.1_BLE". Right click "ble_advertising.py" and select "Upload to /" to upload it to Pico W. Then, double click "ble.py" to open the file.
 
-32.1_BLE
+24.1_BLE
 ---------------------------
 
 .. image:: ../_static/imgs/33_Bluetooth_(Only_for_Pico_W)/Chapter33_38.png
@@ -127,7 +127,7 @@ You can check the message from Bluetooth in "Shell".
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.1_BLE/32.1_BLE.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.1_BLE/24.1_BLE.py
     :linenos: 
     :language: python
     :lines: 1-92
@@ -135,7 +135,7 @@ The following is the program code:
 
 Define the specified UUID number for BLE vendor.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.1_BLE/32.1_BLE.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.1_BLE/24.1_BLE.py
     :linenos: 
     :language: python
     :lines: 1-92
@@ -143,7 +143,7 @@ Define the specified UUID number for BLE vendor.
 
 Write a '_irq' function to manage BLE interrupt events
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.1_BLE/32.1_BLE.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.1_BLE/24.1_BLE.py
     :linenos: 
     :language: python
     :lines: 42-58
@@ -151,7 +151,7 @@ Write a '_irq' function to manage BLE interrupt events
 
 Initialize the BLE function and name it.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.1_BLE/32.1_BLE.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.1_BLE/24.1_BLE.py
     :linenos: 
     :language: python
     :lines: 32-32
@@ -159,13 +159,13 @@ Initialize the BLE function and name it.
 
 When the smartphone sends data to the Pico W via BLE Bluetooth, convert the data to utf-8 format and remove the trailing '\r\n', then print it out via the serial port. When the Pico W receives data from the serial port, it sends the data back to the smartphone via BLE Bluetooth.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.1_BLE/32.1_BLE.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.1_BLE/24.1_BLE.py
     :linenos: 
     :language: python
     :lines: 75-90
     :dedent:
 
-Project 32.2 Bluetooth Control LED
+Project Bluetooth Control LED
 *******************************************
 
 In this project, we will control an LED via Pico W's Bluetooth function.
@@ -226,7 +226,7 @@ Code
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "32.2_BLE_LED". :red:`Right click "ble_advertising.py" and select "Upload to /" to upload it to Pico W`. Then, double click "ble_led.py" to open the file.
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "24.2_BLE_LED". :red:`Right click "ble_advertising.py" and select "Upload to /" to upload it to Pico W`. Then, double click "ble_led.py" to open the file.
 
 BLE_LED
 ------------------------
@@ -259,7 +259,7 @@ LED Status.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.2_BLE_LED/32.2_BLE_LED.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.2_BLE_LED/24.2_BLE_LED.py
     :linenos: 
     :language: python
     :lines: 1-87
@@ -267,7 +267,7 @@ The following is the program code:
 
 Compare received message with "led_on" and "led_off" and take action accordingly.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/32.2_BLE_LED/32.2_BLE_LED.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.2_BLE_LED/24.2_BLE_LED.py
     :linenos: 
     :language: python
     :lines: 85-90

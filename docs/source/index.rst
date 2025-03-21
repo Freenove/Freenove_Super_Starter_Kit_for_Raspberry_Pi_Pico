@@ -31,7 +31,7 @@ This product provides the following online documents.
 
 .. toctree::
    :maxdepth: 1
-   :glob:
+   :caption: FNK0063
 
    fnk0063/codes/C.rst
    fnk0063/codes/Python.rst

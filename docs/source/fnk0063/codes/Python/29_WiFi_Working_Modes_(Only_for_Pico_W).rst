@@ -6,7 +6,7 @@ The biggest difference between the raspberry pi pico and the raspberry pi Pico W
 
 If you have Pico in your hand, please change it to Pico W before continuing to learn.
 
-Project 30.1 Station mode
+Project Station mode
 **********************************
 
 Component List
@@ -50,7 +50,7 @@ Code
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "29.1_Station_mode" and double click "29.1_Station_mode.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "21.1_Station_mode" and double click "21.1_Station_mode.py". 
 
 Station_mode
 ---------------------------
@@ -67,7 +67,7 @@ After making sure the router name and password are entered correctly, compile an
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 1-22
@@ -75,7 +75,7 @@ The following is the program code:
 
 Import network module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 2-2
@@ -83,7 +83,7 @@ Import network module.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 4-5
@@ -91,7 +91,7 @@ Enter correct router name and password.
 
 Set PICO W in Station mode.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 9-9
@@ -99,7 +99,7 @@ Set PICO W in Station mode.
 
 Activate Pico W's Station mode, initiate a connection request to the router and enter the password to connect.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 12-13
@@ -107,7 +107,7 @@ Activate Pico W's Station mode, initiate a connection request to the router and 
 
 Wait for PICO W to connect to router until they connect to each other successfully.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 14-15
@@ -115,7 +115,7 @@ Wait for PICO W to connect to router until they connect to each other successful
 
 Print the IP address assigned to PICO W in "Shell".
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.1_Station_mode/29.1_Station_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_Station_mode/21.1_Station_mode.py
     :linenos: 
     :language: python
     :lines: 16-16
@@ -176,7 +176,7 @@ Project AP mode
 Component List & Circuit
 ===============================
 
-Component List & Circuit are the same as in Section 30.1.
+Component List & Circuit are the same as in Section 22.1.
 
 Component knowledge
 ===========================
@@ -202,7 +202,7 @@ Code
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "29.2_AP_mode". and double click "29.2_AP_mode.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "21.2_AP_mode". and double click "21.2_AP_mode.py". 
 
 AP_mode
 ----------------------------
@@ -212,7 +212,7 @@ AP_mode
 
 Before the Code runs, you can make any changes to the AP name and password for PICO W in the box as shown in the illustration above. Of course, you can leave it alone by default.
 
-Click "Run current script", :blue:`open the AP function of PICO W and print the access point information. `
+Click "Run current script", :blue:`open the AP function of PICO W and print the access point information.`
 
 .. image:: ../_static/imgs/30_WiFi_Working_Modes_(Only_for_Pico_W)/Chapter30_14.png
     :align: center
@@ -224,7 +224,7 @@ Turn on the WiFi scanning function of your phone, and you can see the ssid_AP on
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 1-26
@@ -232,7 +232,7 @@ The following is the program code:
 
 Import network module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 1-1
@@ -240,7 +240,7 @@ Import network module.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 3-4
@@ -248,7 +248,7 @@ Enter correct router name and password.
 
 Set PICO W in AP mode.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 11-11
@@ -256,7 +256,7 @@ Set PICO W in AP mode.
 
 Configure IP address, gateway and subnet mask for PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 15-15
@@ -264,7 +264,7 @@ Configure IP address, gateway and subnet mask for PICO W.
 
 Turn on an AP in PICO W, whose name is set by ssid_AP and password is set by password_AP.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 17-18
@@ -272,7 +272,7 @@ Turn on an AP in PICO W, whose name is set by ssid_AP and password is set by pas
 
 If the program is running abnormally, the AP disconnection function will be called. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.2_AP_mode/29.2_AP_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.2_AP_mode/21.2_AP_mode.py
     :linenos: 
     :language: python
     :lines: 14-14
@@ -327,7 +327,7 @@ Project AP+Station mode
 Component List & Circuit
 ==============================
 
-Component List & Circuit are the same as in Section 30.1.
+Component List & Circuit are the same as in Section 22.1.
 
 Component knowledge
 ==============================
@@ -350,15 +350,15 @@ Code
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "29.3_AP+STA_mode"and double click "29.3_AP+STA_mode.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "21.3_AP+STA_mode"and double click "21.3_AP+STA_mode.py". 
 
-29.3_AP+STA_mode
+21.3_AP+STA_mode
 ------------------------------
 
 .. image:: ../_static/imgs/30_WiFi_Working_Modes_(Only_for_Pico_W)/Chapter30_16.png
     :align: center
 
-It is analogous to project 29.1 and project 29.2. Before running the Code, you need to modify ssidRouter, passwordRouter, ssidAP and passwordAP shown in the box of the illustration above.
+It is analogous to project 21.1 and project 21.2. Before running the Code, you need to modify ssidRouter, passwordRouter, ssidAP and passwordAP shown in the box of the illustration above.
 
 After making sure that the code is modified correctly, click "Run current script" and the "Shell" will display as follows:
 
@@ -372,7 +372,7 @@ Turn on the WiFi scanning function of your phone, and you can see the ssidAP on 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.3_AP+STA_mode/21.3_AP+STA_mode.py
     :linenos: 
     :language: python
     :lines: 1-41

@@ -106,15 +106,15 @@ Compile and upload the code to Pico, the servo will rotate from 0 degrees to 180
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Servo_Sweep/Sketch_19.1_Servo_Sweep.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.1_Servo_Sweep/Sketch_17.1_Servo_Sweep.ino
     :linenos: 
     :language: c
-    :lines: 1-49
+    :lines: 1-27
     :dedent:
 
 Servo uses the Servo library, like the following reference to Servo library:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Servo_Sweep/Sketch_19.1_Servo_Sweep.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.1_Servo_Sweep/Sketch_17.1_Servo_Sweep.ino
     :linenos: 
     :language: c
     :lines: 7-7
@@ -122,7 +122,7 @@ Servo uses the Servo library, like the following reference to Servo library:
 
 Servo library provides the Servo class that controls it. Servo class must be instantiated before using:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Servo_Sweep/Sketch_19.1_Servo_Sweep.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.1_Servo_Sweep/Sketch_17.1_Servo_Sweep.ino
     :linenos: 
     :language: c
     :lines: 10-10
@@ -130,7 +130,7 @@ Servo library provides the Servo class that controls it. Servo class must be ins
 
 Set the control servo motor pin.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Servo_Sweep/Sketch_19.1_Servo_Sweep.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.1_Servo_Sweep/Sketch_17.1_Servo_Sweep.ino
     :linenos: 
     :language: c
     :lines: 14-14
@@ -138,7 +138,7 @@ Set the control servo motor pin.
 
 After initializing the servo, you can control the servo to rotate to a specific angle:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Servo_Sweep/Sketch_19.1_Servo_Sweep.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.1_Servo_Sweep/Sketch_17.1_Servo_Sweep.ino
     :linenos: 
     :language: c
     :lines: 20-20
@@ -210,12 +210,12 @@ Use caution when supplying power to the Servo, it should be 5V. Make sure you do
 Sketch
 =============================
 
-Sketch_19.2_Control_Servo_by_Potentiometer
+Sketch_17.2_Control_Servo_by_Potentiometer
 ----------------------------------------------
 
 Now, write the code to detect the voltage of rotary potentiometer, and control servo to rotate to a different angle according to that. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_18.1_Control_Motor_by_L293D/Sketch_18.1_Control_Motor_by_L293D.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_17.2_Control_Servo_by_Potentiometer/Sketch_17.2_Control_Servo_by_Potentiometer.ino
     :linenos: 
     :language: c
     :lines: 1-24

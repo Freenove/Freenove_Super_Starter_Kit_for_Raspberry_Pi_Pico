@@ -4,7 +4,7 @@ Chapter Snake Game
 
 We have learned how to control 2D and 3D figures. Now, we will use Raspberry Pi Pico to play the classic snake game. There are both 2D and 3D versions.
 
-Project 3.1 Snake Game
+Project Snake Game
 ***********************************
 
 First, let's play a 2D snake game.
@@ -87,7 +87,7 @@ When the game fails, press space bar to restart the game:
 
 Additionally, you can restart the game by pressing the space bar at any time.
 
-Project 3.2 Snake Game 3D
+Project Snake Game 3D
 *************************************
 
 Now, let's experience the 3D version game.

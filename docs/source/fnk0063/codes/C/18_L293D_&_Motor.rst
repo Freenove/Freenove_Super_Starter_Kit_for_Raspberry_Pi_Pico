@@ -119,7 +119,7 @@ Download code to Pico, rotate the potentiometer in one direction, and the motor 
 
 The following is the sketch:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_18.1_Control_Motor_by_L293D/Sketch_18.1_Control_Motor_by_L293D.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_16.1_Control_Motor_by_L293D/Sketch_16.1_Control_Motor_by_L293D.ino
     :linenos: 
     :language: c
     :lines: 1-49
@@ -127,7 +127,7 @@ The following is the sketch:
 
 The ADC of Pico has a 10-bit accuracy, corresponding to a range from 0 to 1023. In this program, set the number 512 as the midpoint. If the value of ADC is less than 512, make the motor rotate in one direction. If the value of ADC is greater than 512, make the motor rotate in the other direction. Subtract 512 from the ADC value and take the absolute value and use this result as the speed of the motor.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_18.1_Control_Motor_by_L293D/Sketch_18.1_Control_Motor_by_L293D.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_16.1_Control_Motor_by_L293D/Sketch_16.1_Control_Motor_by_L293D.ino
     :linenos: 
     :language: c
     :lines: 23-34
@@ -135,7 +135,7 @@ The ADC of Pico has a 10-bit accuracy, corresponding to a range from 0 to 1023. 
 
 Function driveMotor is used to control the rotation direction and speed of the motor. The dir represents direction while spd refers to speed.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_18.1_Control_Motor_by_L293D/Sketch_18.1_Control_Motor_by_L293D.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_16.1_Control_Motor_by_L293D/Sketch_16.1_Control_Motor_by_L293D.ino
     :linenos: 
     :language: c
     :lines: 37-49

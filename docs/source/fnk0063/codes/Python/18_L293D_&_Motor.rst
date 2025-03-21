@@ -106,7 +106,7 @@ Circuit
 Code
 ==============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "18.1_Motor_And_Driver" and double click "18.1_Motor_And_Driver.py".
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "16.1_Motor_And_Driver" and double click "16.1_Motor_And_Driver.py".
 
 Motor_And_Driver
 -------------------------------
@@ -121,7 +121,7 @@ Click "Run current script", rotate the potentiometer in one direction and the mo
 
 The following is the Code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_Motor_And_Driver/18.1_Motor_And_Driver.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/16.1_Motor_And_Driver/16.1_Motor_And_Driver.py
     :linenos: 
     :language: python
     :lines: 1-33
@@ -129,7 +129,7 @@ The following is the Code:
 
 In the program, we will define 32767 as the intermediate point to adjust the potentiometer. When the ADC value is less than 32767, the motor rotates in one direction; when the ADC value is greater than 32767, the motor rotates in the opposite direction. The speed of the motor will change with the adjustment of the potentiometer. When the potentiometer is adjusted, the closer the ADC value is to the middle point, the slower the motor speed; the closer the ADC value is to 0 or 65535, the faster the motor speed.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_Motor_And_Driver/18.1_Motor_And_Driver.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/16.1_Motor_And_Driver/16.1_Motor_And_Driver.py
     :linenos: 
     :language: python
     :lines: 22-31
@@ -137,7 +137,7 @@ In the program, we will define 32767 as the intermediate point to adjust the pot
 
 Initialize pins of L293D chip.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_Motor_And_Driver/18.1_Motor_And_Driver.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/16.1_Motor_And_Driver/16.1_Motor_And_Driver.py
     :linenos: 
     :language: python
     :lines: 5-9
@@ -145,7 +145,7 @@ Initialize pins of L293D chip.
 
 Function driveMotor is used to control the rotation direction and speed of the motor. The dir represents direction while **spd** refers to speed.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_Motor_And_Driver/18.1_Motor_And_Driver.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/16.1_Motor_And_Driver/16.1_Motor_And_Driver.py
     :linenos: 
     :language: python
     :lines: 12-19

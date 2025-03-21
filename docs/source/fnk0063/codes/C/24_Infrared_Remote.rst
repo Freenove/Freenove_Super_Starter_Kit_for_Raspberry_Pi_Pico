@@ -104,7 +104,7 @@ Download the code to Pico, open the serial port monitor, set the baud rate to 11
 IR.cpp
 ----------------------------
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.1_Infrared_Remote_Control/IR.cpp
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.1_Infrared_Remote_Control/IR.cpp
     :linenos: 
     :language: c
     :lines: 1-79
@@ -131,7 +131,7 @@ You can check whether flagCode has been reset, If it is reset, call IR_Decode() 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.1_Infrared_Remote_Control/IR.cpp
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.1_Infrared_Remote_Control/IR.cpp
     :linenos: 
     :language: c
     :lines: 1-21
@@ -139,7 +139,7 @@ The following is the program code:
 
 IR_Init() is called to initialize infrared receiving pin GP16, enable external interrupt and associate it with GP16.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.1_Infrared_Remote_Control/Sketch_24.1_Infrared_Remote_Control.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.1_Infrared_Remote_Control/Sketch_20.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :lines: 12-12
@@ -149,7 +149,7 @@ In loop(), determines whether infrared bit flag is reset. If it is, IR_Decode() 
 
 After using the infrared decoding function IR_Decode(), you need to call IR_Release() to release the infrared data receiving function. Otherwise, it will not receiver new infrared data again.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.1_Infrared_Remote_Control/Sketch_24.1_Infrared_Remote_Control.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.1_Infrared_Remote_Control/Sketch_20.1_Infrared_Remote_Control.ino
     :linenos: 
     :language: c
     :lines: 16-20
@@ -183,7 +183,6 @@ Component List
 | |Chapter24_00|          |  |Chapter23_11|               |  |Chapter24_12|          |
 +-------------------------+-------------------------------+--------------------------+
 
-.. |Chapter24_00| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_00.png
 .. |Chapter24_10| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_10.png
 .. |Chapter24_11| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_11.png
 .. |Chapter24_12| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_12.png
@@ -212,7 +211,7 @@ Sketch
 
 The sketch controls the brightness of the LED by determining the key value of the infrared received.
 
-Sketch_24.2_Control_LED_through_Infrared_Remote
+Sketch_20.2_Control_LED_through_Infrared_Remote
 -----------------------------------------------------
 
 .. image:: ../_static/imgs/24_Infrared_Remote/Chapter24_15.png
@@ -227,7 +226,7 @@ Rendering:
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Control_LED_through_Infrared_Remote/IR.cpp
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.2_Control_LED_through_Infrared_Remote/IR.cpp
     :linenos: 
     :language: c
     :lines: 1-79
@@ -235,7 +234,7 @@ The following is the program code:
 
 The handleControl() function is used to execute events corresponding to infrared code values. Every time when the function is called, the buzzer sounds once and determine the brightness of the LED based on the infrared key value. If the key value is not "0", "1", "2", "3", the buzzer sounds once, but the brightness of LED will not change.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Control_LED_through_Infrared_Remote/IR.cpp
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.2_Control_LED_through_Infrared_Remote/IR.cpp
     :linenos: 
     :language: c
     :lines: 29-48
@@ -243,7 +242,7 @@ The handleControl() function is used to execute events corresponding to infrared
 
 In the loop() function, each time the infrared data is received, it is decoded and printed out through the serial monitor, and the handleControl() function is called to control the LED and buzzer to execute the corresponding code.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_24.2_Control_LED_through_Infrared_Remote/IR.cpp
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_20.2_Control_LED_through_Infrared_Remote/IR.cpp
     :linenos: 
     :language: c
     :lines: 20-27

@@ -81,7 +81,7 @@ Circuit
 Code
 =============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "19.1_Servo_Sweep".Select "myservo.py", right click your mouse to select "Upload to /", wait for "myservo.py" to be uploaded to Raspberry Pi Pico and then double click "19.1_Servo_Sweep.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "17.1_Servo_Sweep".Select "myservo.py", right click your mouse to select "Upload to /", wait for "myservo.py" to be uploaded to Raspberry Pi Pico and then double click "17.1_Servo_Sweep.py". 
 
 Servo_Sweep
 ----------------------------
@@ -96,7 +96,7 @@ Click "Run current script", the Servo will rotate from 0 degrees to 180 degrees 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Servo_Sweep/19.1_Servo_Sweep.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.1_Servo_Sweep/17.1_Servo_Sweep.py
     :linenos: 
     :language: python
     :lines: 1-17
@@ -104,7 +104,7 @@ The following is the program code:
 
 Import myservo module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Servo_Sweep/19.1_Servo_Sweep.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.1_Servo_Sweep/17.1_Servo_Sweep.py
     :linenos: 
     :language: python
     :lines: 1-1
@@ -112,7 +112,7 @@ Import myservo module.
 
 Initialize pins of the servo and set the starting point of the servo to 0 degree.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Servo_Sweep/19.1_Servo_Sweep.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.1_Servo_Sweep/17.1_Servo_Sweep.py
     :linenos: 
     :language: python
     :lines: 4-6
@@ -120,7 +120,7 @@ Initialize pins of the servo and set the starting point of the servo to 0 degree
 
 Control the servo to rotate to a specified angle within the range of 0-180 degrees.  
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Servo_Sweep/19.1_Servo_Sweep.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.1_Servo_Sweep/17.1_Servo_Sweep.py
     :linenos: 
     :language: python
     :lines: 5-5
@@ -128,7 +128,7 @@ Control the servo to rotate to a specified angle within the range of 0-180 degre
 
 Use two for loops. The first one controls the servo to rotate from 0 degree to 180 degrees while the other controls it to rotate back from 180 degrees to 0 degree.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Servo_Sweep/19.1_Servo_Sweep.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.1_Servo_Sweep/17.1_Servo_Sweep.py
     :linenos: 
     :language: python
     :lines: 10-15
@@ -204,7 +204,7 @@ Use caution when supplying power to the Servo, it should be 5V. Make sure you do
 Code
 =============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "19.2_Servo_Knob". Select "myservo.py", right click your mouse to select "Upload to /", wait for "myservo.py" to be uploaded to Raspberry Pi Pico and then double click "19.2_Servo_Knob.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "17.2_Servo_Knob". Select "myservo.py", right click your mouse to select "Upload to /", wait for "myservo.py" to be uploaded to Raspberry Pi Pico and then double click "17.2_Servo_Knob.py". 
 
 Servo_Knob
 ------------------------------
@@ -219,7 +219,7 @@ Click "Run current script", twist the potentiometer back and forth, and the serv
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.2_Servo_Knob/19.2_Servo_Knob.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/17.2_Servo_Knob/17.2_Servo_Knob.py
     :linenos: 
     :language: python
     :lines: 1-16

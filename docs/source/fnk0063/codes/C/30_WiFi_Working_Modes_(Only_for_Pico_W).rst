@@ -6,7 +6,7 @@ The biggest difference between the raspberry pi pico and the raspberry pi Pico W
 
 If you have Pico in your hand, please change it to Pico W before continuing to learn.
 
-Project 30.1 Station mode
+Project Station mode
 **********************************
 
 Component List
@@ -48,7 +48,7 @@ Connect Pico W to the computer using the USB cable.
 Sketch
 ===========================
 
-Sketch_30.1_Station_mode
+Sketch_21.1_Station_mode
 -----------------------------
 
 .. image:: ../_static/imgs/30_WiFi_Working_Modes_(Only_for_Pico_W)/Chapter30_02.png
@@ -65,15 +65,15 @@ When PICO W successfully connects to "ssid_Router", serial monitor will print ou
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
-    :lines: 1-60
+    :lines: 1-29
     :dedent:
 
 Include the WiFi Library header file of Pico W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
     :lines: 7-7
@@ -81,7 +81,7 @@ Include the WiFi Library header file of Pico W.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
     :lines: 9-10
@@ -89,7 +89,7 @@ Enter correct router name and password.
 
 Set Pico W in Station mode and connect it to your router.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
     :lines: 16-16
@@ -97,7 +97,7 @@ Set Pico W in Station mode and connect it to your router.
 
 Check whether Pico W has connected to router successfully every 0.5s.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
     :lines: 18-21
@@ -105,7 +105,7 @@ Check whether Pico W has connected to router successfully every 0.5s.
 
 Serial monitor prints out the IP address assigned to Pico W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.1_WiFi_Station/Sketch_30.1_WiFi_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.1_WiFi_Station/Sketch_21.1_WiFi_Station.ino    
     :linenos: 
     :language: c
     :lines: 24-24
@@ -149,7 +149,7 @@ Project AP mode
 Component List & Circuit
 ===============================
 
-Component List & Circuit are the same as in Section 30.1.
+Component List & Circuit are the same as in Section 21.1.
 
 Component knowledge
 ===========================
@@ -199,7 +199,7 @@ When observing the print information of the serial monitor, turn on the WiFi sca
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.2_WiFi_AP/Sketch_30.2_WiFi_AP.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.2_WiFi_AP/Sketch_21.2_WiFi_AP.ino    
     :linenos: 
     :language: c
     :lines: 1-36
@@ -207,7 +207,7 @@ The following is the program code:
 
 Include WiFi Library header file of PICO W. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.2_WiFi_AP/Sketch_30.2_WiFi_AP.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.2_WiFi_AP/Sketch_21.2_WiFi_AP.ino    
     :linenos: 
     :language: c
     :lines: 7-7
@@ -215,7 +215,7 @@ Include WiFi Library header file of PICO W.
 
 Enter correct AP name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.2_WiFi_AP/Sketch_30.2_WiFi_AP.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.2_WiFi_AP/Sketch_21.2_WiFi_AP.ino    
     :linenos: 
     :language: c
     :lines: 9-10
@@ -223,7 +223,7 @@ Enter correct AP name and password.
 
 Set PICO W in AP mode.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.2_WiFi_AP/Sketch_30.2_WiFi_AP.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.2_WiFi_AP/Sketch_21.2_WiFi_AP.ino    
     :linenos: 
     :language: c
     :lines: 21-21
@@ -243,7 +243,7 @@ Turn on an AP in PICO W, whose name is set by ssid_AP and password is set by pas
 
 Check whether the AP is turned on successfully. If yes, print out IP and MAC address of AP established by PICO W. If no, print out the failure prompt. 
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.2_WiFi_AP/Sketch_30.2_WiFi_AP.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.2_WiFi_AP/Sketch_21.2_WiFi_AP.ino    
     :linenos: 
     :language: c
     :lines: 25-32
@@ -279,13 +279,13 @@ Reference
     
     **softAPdisconnect ():** disconnect AP mode.
 
-Project 30.3 AP+Station mode
+Project AP+Station mode
 ***********************************
 
 Component List & Circuit
 ==============================
 
-Component List & Circuit are the same as in Section 30.1.
+Component List & Circuit are the same as in Section 21.1.
 
 Component knowledge
 ==============================
@@ -312,7 +312,7 @@ Sketch_AP_Station_mode
 .. image:: ../_static/imgs/30_WiFi_Working_Modes_(Only_for_Pico_W)/Chapter30_08.png
     :align: center
 
-It is analogous to project 30.1 and project 30.2. Before running the Sketch, you need to modify ssid_Router, password_Router, ssid_AP and password_AP shown in the box of the illustration above.
+It is analogous to project 21.1 and project 21.2. Before running the Sketch, you need to modify ssid_Router, password_Router, ssid_AP and password_AP shown in the box of the illustration above.
 
 After making sure that Sketch is modified correctly, compile and upload codes to PICO W, open serial monitor and set baud rate to 115200. Then it will display as follows: 
 
@@ -326,7 +326,7 @@ When observing the print information of the serial monitor, turn on the WiFi sca
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_30.3_AP_Station/Sketch_30.3_AP_Station.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_21.3_AP_Station/Sketch_21.3_AP_Station.ino    
     :linenos: 
     :language: c
     :lines: 1-45

@@ -97,7 +97,7 @@ Circuit
 Code
 =========================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "21.1_I2C_LCD1602". Select "I2C_LCD.py"and "LCD_API.py", right click your mouse to select "Upload to /", wait for "I2C_LCD.py" and"LCD_API.py" to be uploaded to Raspberry Pi Pico and then double click "21.1_I2C_LCD1602.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "18.1_I2C_LCD1602". Select "I2C_LCD.py"and "LCD_API.py", right click your mouse to select "Upload to /", wait for "I2C_LCD.py" and"LCD_API.py" to be uploaded to Raspberry Pi Pico and then double click "18.1_I2C_LCD1602.py". 
 
 I2C_LCD1602
 -------------------------
@@ -124,7 +124,7 @@ If the LCD1602 you received is the following one, and you cannot see anything on
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_IIC_LCD1602/21.1_IIC_LCD1602.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_IIC_LCD1602/18.1_IIC_LCD1602.py
     :linenos: 
     :language: python
     :lines: 1-22
@@ -132,7 +132,7 @@ The following is the program code:
 
 Import time, I2C and I2C_LCD modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_IIC_LCD1602/21.1_IIC_LCD1602.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_IIC_LCD1602/18.1_IIC_LCD1602.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -140,7 +140,7 @@ Import time, I2C and I2C_LCD modules.
 
 Create an I2C object, initialize the I2C parameter configuration, and associate it with the LCD1602 pin. Call the scan() function to query the LCD1602 device address.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_IIC_LCD1602/21.1_IIC_LCD1602.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_IIC_LCD1602/18.1_IIC_LCD1602.py
     :linenos: 
     :language: python
     :lines: 5-6
@@ -158,7 +158,7 @@ Use the if statement to determine whether the queried I2C device address is empt
 
 Move the cursor of LCD1602 to the first row, first column, and print out "Hello, world!"
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_IIC_LCD1602/21.1_IIC_LCD1602.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_IIC_LCD1602/18.1_IIC_LCD1602.py
     :linenos: 
     :language: python
     :lines: 11-12
@@ -166,7 +166,7 @@ Move the cursor of LCD1602 to the first row, first column, and print out "Hello,
 
 The second line of LCD1602 continuously prints the number of seconds after the Raspberry Pi Pico program runs.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/21.1_IIC_LCD1602/21.1_IIC_LCD1602.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/18.1_IIC_LCD1602/18.1_IIC_LCD1602.py
     :linenos: 
     :language: python
     :lines: 14-18

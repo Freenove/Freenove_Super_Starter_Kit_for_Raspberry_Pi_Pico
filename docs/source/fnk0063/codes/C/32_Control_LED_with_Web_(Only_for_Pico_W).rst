@@ -85,7 +85,7 @@ You can click the corresponding button to control the LED on and off.
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 1-120
@@ -93,7 +93,7 @@ The following is the program code:
 
 Include the WiFi Library header file of PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 11-11
@@ -101,7 +101,7 @@ Include the WiFi Library header file of PICO W.
 
 Enter correct router name and password.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 14-15
@@ -109,7 +109,7 @@ Enter correct router name and password.
 
 Set PICO W in Station mode and connect it to your router.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 40-40
@@ -117,7 +117,7 @@ Set PICO W in Station mode and connect it to your router.
 
 Check whether PICO W has connected to router successfully every 0.5s.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 41-44
@@ -125,7 +125,7 @@ Check whether PICO W has connected to router successfully every 0.5s.
 
 Serial monitor prints out the IP address assigned to PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 49-49
@@ -133,7 +133,7 @@ Serial monitor prints out the IP address assigned to PICO W.
 
 Click the button on the web page to control the LED light on and off.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_32.1_Control_the_LED_with_Web/Sketch_32.1_Control_the_LED_with_Web.ino    
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_23.1_Control_the_LED_with_Web/Sketch_23.1_Control_the_LED_with_Web.ino    
     :linenos: 
     :language: c
     :lines: 75-84

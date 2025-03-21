@@ -63,7 +63,7 @@ Unzip the downloaded file to your computer. Click "processing.exe" as the figure
 Use Server mode for communication
 --------------------------------------
 
-Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_31.1_WiFiClient\\sketchWiFi\\sketchWiFi.pde** ", and click "Run".
+Open the " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico\\C\\Sketches\\Sketch_23.1_WiFiClient\\sketchWiFi\\sketchWiFi.pde** ", and click "Run".
 
 The new pop-up interface is as follows. If PICO W is used as client, select TCP SERVER mode for sketchWiFi.
 
@@ -149,7 +149,7 @@ The newly pop up window will use the computer's IP address by default and open a
 
 Move the program folder " **Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes** " to disk(D) in advance with the path of " **D:/Micropython_Codes** ".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "30.1_TCP_as_Client" and double click "30.1_TCP_as_Client.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "22.1_TCP_as_Client" and double click "22.1_TCP_as_Client.py". 
 
 Before clicking "Run current script", please modify the name and password of your router and fill in the "host" and "port" according to the IP information in processing app shown in the box below:
 
@@ -178,7 +178,7 @@ At this point, you can send data to Pico W through sketchWiFi. Pico W will send 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 1-43
@@ -186,7 +186,7 @@ The following is the program code:
 
 Import network、socket、time modules.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 1-3
@@ -194,7 +194,7 @@ Import network、socket、time modules.
 
 Enter the actual router name, password, remote server IP address, and port number.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 5-8
@@ -202,7 +202,7 @@ Enter the actual router name, password, remote server IP address, and port numbe
 
 Connect specified Router until it is successful. 
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 13-21
@@ -210,7 +210,7 @@ Connect specified Router until it is successful.
 
 Connect router and then connect it to remote server.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 23-27
@@ -218,7 +218,7 @@ Connect router and then connect it to remote server.
 
 Send messages to the remote server, receive the messages from it and print them out, and then send the messages back to the server.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 28-37
@@ -226,7 +226,7 @@ Send messages to the remote server, receive the messages from it and print them 
 
 If an exception occurs in the program, for example, the remote server is shut down, execute the following program, turn off the socket function, and disconnect the WiFi.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_TCP_as_Client/22.1_TCP_as_Client.py
     :linenos: 
     :language: python
     :lines: 39-43
@@ -301,9 +301,6 @@ Component List
 | |Chapter01_08|                          | |Chapter01_09|                           |
 +-----------------------------------------+------------------------------------------+
 
-.. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
-.. |Chapter01_09| image:: ../_static/imgs/1_LED/Chapter01_09.png
-
 Circuit
 ============================
 
@@ -329,9 +326,6 @@ Component List
 | |Chapter01_08|                          | |Chapter01_09|                           |
 +-----------------------------------------+------------------------------------------+
 
-.. |Chapter01_08| image:: ../_static/imgs/1_LED/Chapter01_08.png
-.. |Chapter01_09| image:: ../_static/imgs/1_LED/Chapter01_09.png
-
 Circuit
 ============================
 
@@ -345,11 +339,11 @@ Sketch
 
 Move the program folder "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Python/Python_Codes" to disk(D) in advance with the path of "D:/Micropython_Codes".
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "30.2_TCP_as_Server" and double click "30.2_TCP_as_Server.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "22.2_TCP_as_Server" and double click "22.2_TCP_as_Server.py". 
 
 Before clicking "Run current script", please modify the name and password of your router shown in the box below.
 
-30.2_TCP_as_Server
+22.2_TCP_as_Server
 -------------------------------
 
 .. image:: ../_static/imgs/31_TCP_IP_(Only_for_Pico_W)/Chapter31_32.png
@@ -362,7 +356,7 @@ After making sure that the router's name and password are correct, click "Run cu
 
 Processing:
 
-Open the "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Codes/MicroPython_Codes/30.2_TCP_as_Server/
+Open the "Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi_Pico/Codes/MicroPython_Codes/22.2_TCP_as_Server/
 
 sketchWiFi/sketchWiFi.pde".
 
@@ -381,7 +375,7 @@ You can enter any information in the "Send Box" of sketchWiFi. Click "Send" and 
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 1-53
@@ -389,7 +383,7 @@ The following is the program code:
 
 Call function connectWifi() to connect to router and obtain the dynamic IP that it assigns to PICO W.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 23-24
@@ -397,7 +391,7 @@ Call function connectWifi() to connect to router and obtain the dynamic IP that 
 
 Open the socket server, bind the server to the dynamic IP, and open a data monitoring port.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 30-35
@@ -405,7 +399,7 @@ Open the socket server, bind the server to the dynamic IP, and open a data monit
 
 Print the server's IP address and port, monitor the port and wait for the connection of other network devices.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 30-34
@@ -413,7 +407,7 @@ Print the server's IP address and port, monitor the port and wait for the connec
 
 Each time receiving data, print them in "Shell" and send them back to the client.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 37-47
@@ -421,7 +415,7 @@ Each time receiving data, print them in "Shell" and send them back to the client
 
 If the client is disconnected, close the server and disconnect WiFi.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/29.3_AP+STA_mode/29.3_AP+STA_mode.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_TCP_as_Server/22.2_TCP_as_Server.py
     :linenos: 
     :language: python
     :lines: 48-53

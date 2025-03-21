@@ -88,7 +88,7 @@ Circuit
 Code
 =========================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "24.1_Infrared_Remote". Select "irrecvdata.py", right click your mouse to select "Upload to /", wait for "irrecvdata.py" to be uploaded to Raspberry Pi Pico and then double click "24.1_Infrared_Remote.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "20.1_Infrared_Remote". Select "irrecvdata.py", right click your mouse to select "Upload to /", wait for "irrecvdata.py" to be uploaded to Raspberry Pi Pico and then double click "20.1_Infrared_Remote.py". 
 
 Infrared_Remote
 ---------------------------
@@ -176,7 +176,6 @@ Component List
 | |Chapter24_00|          |  |Chapter23_11|               |  |Chapter24_12|          |
 +-------------------------+-------------------------------+--------------------------+
 
-.. |Chapter24_00| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_00.png
 .. |Chapter24_10| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_10.png
 .. |Chapter24_11| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_11.png
 .. |Chapter24_12| image:: ../_static/imgs/24_Infrared_Remote/Chapter24_12.png
@@ -205,7 +204,7 @@ Code
 
 The Code controls the brightness of the LED by determining the key value of the infrared received.
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "24.2_Control_LED_through_Infrared_Remote". Select "irrecvdata.py", right click your mouse to select "Upload to /", wait for "irrecvdata.py" to be uploaded to Raspberry Pi Pico and then double click "24.2_Control_LED_through_Infrared_Remote.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "20.2_Control_LED_through_Infrared_Remote". Select "irrecvdata.py", right click your mouse to select "Upload to /", wait for "irrecvdata.py" to be uploaded to Raspberry Pi Pico and then double click "20.2_Control_LED_through_Infrared_Remote.py". 
 
 Control_LED_through_Infrared_Remote
 ---------------------------------------
@@ -220,7 +219,7 @@ Click "Run current script". When pressing "0", "1", "2", "3" of the infrared rem
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.2_Control_LED_through_Infrared_Remote/24.2_Control_LED_through_Infrared_Remote.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/20.2_Control_LED_through_Infrared_Remote/20.2_Control_LED_through_Infrared_Remote.py
     :linenos: 
     :language: python
     :lines: 1-35
@@ -228,7 +227,7 @@ The following is the program code:
 
 The handleControl() function is used to execute events corresponding to infrared code values. Every time when the function is called, the buzzer sounds once and determines the brightness of the LED based on the infrared key value. If the key value is not "0", "1", "2", "3", the buzzer sounds once, but the brightness of LED will not change.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.2_Control_LED_through_Infrared_Remote/24.2_Control_LED_through_Infrared_Remote.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/20.2_Control_LED_through_Infrared_Remote/20.2_Control_LED_through_Infrared_Remote.py
     :linenos: 
     :language: python
     :lines: 12-26
@@ -236,7 +235,7 @@ The handleControl() function is used to execute events corresponding to infrared
 
 Each time the key value of IR remote is received, function handleControl() will be called to process it.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/24.2_Control_LED_through_Infrared_Remote/24.2_Control_LED_through_Infrared_Remote.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/20.2_Control_LED_through_Infrared_Remote/20.2_Control_LED_through_Infrared_Remote.py
     :linenos: 
     :language: python
     :lines: 29-33

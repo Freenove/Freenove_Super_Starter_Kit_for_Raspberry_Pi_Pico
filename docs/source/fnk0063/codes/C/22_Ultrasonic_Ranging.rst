@@ -115,7 +115,7 @@ Download the code to Pico, open the serial monitor, set the baud rate to 115200,
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_Ultrasonic_Ranging/Sketch_22.1_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Ultrasonic_Ranging/Sketch_19.1_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 1-39
@@ -123,7 +123,7 @@ The following is the program code:
 
 First, define the pins and the maximum measurement distance.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_Ultrasonic_Ranging/Sketch_22.1_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Ultrasonic_Ranging/Sketch_19.1_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 7-9
@@ -131,7 +131,7 @@ First, define the pins and the maximum measurement distance.
 
 If the module does not return high level, we cannot wait for this forever, so we need to calculate the time period for the maximum distance, that is, time Out. timeOut= 2*MAX_DISTANCE/100/340*1000000. The result of the constant part in this formula is approximately 58.8.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_Ultrasonic_Ranging/Sketch_22.1_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Ultrasonic_Ranging/Sketch_19.1_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 11-11
@@ -139,7 +139,7 @@ If the module does not return high level, we cannot wait for this forever, so we
 
 Subfunction getSonar () function is used to start the ultrasonic module to begin measuring, and return the measured distance in cm units. In this function, first let trigPin send 10us high level to start the ultrasonic module. Then use pulseIn () to read the ultrasonic module and return the duration time of high level. Finally, the measured distance according to the time is calculated.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_Ultrasonic_Ranging/Sketch_22.1_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Ultrasonic_Ranging/Sketch_19.1_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 27-39
@@ -147,7 +147,7 @@ Subfunction getSonar () function is used to start the ultrasonic module to begin
 
 Lastly, in loop() function, get the measurement distance and display it continually.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.1_Ultrasonic_Ranging/Sketch_22.1_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.1_Ultrasonic_Ranging/Sketch_19.1_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 20-25
@@ -189,7 +189,7 @@ The second way, open Arduino IDE, click Sketch -> Include Library -> Add .ZIP Li
 .. image:: ../_static/imgs/22_Ultrasonic_Ranging/Chapter22_10.png
     :align: center
 
-Sketch_22.2_Ultrasonic_Ranging
+Sketch_19.2_Ultrasonic_Ranging
 ------------------------------------
 
 .. image:: ../_static/imgs/22_Ultrasonic_Ranging/Chapter22_11.png
@@ -202,15 +202,15 @@ Upload the sketch to Pico, open the serial monitor and set the baud rate to 1152
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_Ultrasonic_Ranging/Sketch_22.2_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.2_Ultrasonic_Ranging/Sketch_19.2_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
-    :lines: 1-57
+    :lines: 1-23
     :dedent:
 
 First, add UltrasonicSensor library.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_Ultrasonic_Ranging/Sketch_22.2_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.2_Ultrasonic_Ranging/Sketch_19.2_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 7-7
@@ -218,7 +218,7 @@ First, add UltrasonicSensor library.
 
 Define an ultrasonic object and associate it with the pins.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_Ultrasonic_Ranging/Sketch_22.2_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.2_Ultrasonic_Ranging/Sketch_19.2_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 10-10
@@ -226,7 +226,7 @@ Define an ultrasonic object and associate it with the pins.
 
 Set the ambient temperature to make the module measure more accurately.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_Ultrasonic_Ranging/Sketch_22.2_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.2_Ultrasonic_Ranging/Sketch_19.2_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 16-16
@@ -234,7 +234,7 @@ Set the ambient temperature to make the module measure more accurately.
 
 Use the distanceInCentimeters function to get the distance measured by the ultrasound and print it out through the serial port.
 
-.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_22.2_Ultrasonic_Ranging/Sketch_22.2_Ultrasonic_Ranging.ino
+.. literalinclude:: ../../../freenove_Kit/C/Sketches/Sketch_19.2_Ultrasonic_Ranging/Sketch_19.2_Ultrasonic_Ranging.ino
     :linenos: 
     :language: c
     :lines: 19-23

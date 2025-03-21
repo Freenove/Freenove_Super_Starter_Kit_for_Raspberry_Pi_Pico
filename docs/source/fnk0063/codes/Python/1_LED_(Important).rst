@@ -125,7 +125,7 @@ Each time when using the functions of Raspberry Pi Pico, you need to import modu
     import time
     from machine import Pin
 
-:red:`Configure GP25 of Raspberry Pi Pico to output mode and assign it to an object named "led". `
+:red:`Configure GP25 of Raspberry Pi Pico to output mode and assign it to an object named "led".`
 
 :red:`Configure "LED" of Raspberry Pi Pico W to output mode and assign it to an object named "led".`
 
@@ -312,7 +312,7 @@ Reference
     
         **Handler:** callback function.
 
-Project 1.2 Blink
+Project Blink
 ******************************
 
 In this project, we will use Raspberry Pi Pico to control blinking a common LED.

@@ -103,7 +103,7 @@ Note that the voltage of ultrasonic module is 5V in the circuit.
 Code
 =====================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "22.1_Ultrasonic_Ranging" and double click "22.1_Ultrasonic_Ranging.py". 
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "19.1_Ultrasonic_Ranging" and double click "19.1_Ultrasonic_Ranging.py". 
 
 Ultrasonic_Ranging
 ------------------------------
@@ -118,7 +118,7 @@ Click "Run current script", you can use it to measure the distance between the u
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_Ultrasonic_Ranging/22.1_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Ultrasonic_Ranging/19.1_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 11-12
@@ -126,7 +126,7 @@ The following is the program code:
 
 Define the control pins of the ultrasonic ranging module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_Ultrasonic_Ranging/22.1_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Ultrasonic_Ranging/19.1_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 4-5
@@ -134,7 +134,7 @@ Define the control pins of the ultrasonic ranging module.
 
 Set the speed of sound.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_Ultrasonic_Ranging/22.1_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Ultrasonic_Ranging/19.1_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 8-8
@@ -142,7 +142,7 @@ Set the speed of sound.
 
 The getDistance() function is used to drive the ultrasonic module to measure distance. In the function, after the Trig pin keeps at high level for 10us to start the ultrasonic module, Echo.value() is used to read the status of ultrasonic module's Echo pin, and then use timestamp function of the time module to calculate the duration of Echo pin's high level. Finally, calculate the measured distance based on time and return the value.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_Ultrasonic_Ranging/22.1_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Ultrasonic_Ranging/19.1_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 10-22
@@ -150,7 +150,7 @@ The getDistance() function is used to drive the ultrasonic module to measure dis
 
 Delay for 2 seconds and wait for the ultrasonic module to stabilize. Print data obtained from ultrasonic module every 500 milliseconds.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.1_Ultrasonic_Ranging/22.1_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.1_Ultrasonic_Ranging/19.1_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 24-28
@@ -167,7 +167,7 @@ Component List and Circuit are the same as the previous section.
 Code
 ============================
 
-Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "22.2_Ultrasonic_Ranging". Select "hcsr04.py", right click your mouse to select "Upload to /", wait for "hcsr04.py" to be uploaded to Raspberry Pi Pico and then double click "22.2_Ultrasonic_Ranging.py".
+Open "Thonny", click "This computer" -> "D:" -> "Micropython_Codes" -> "19.2_Ultrasonic_Ranging". Select "hcsr04.py", right click your mouse to select "Upload to /", wait for "hcsr04.py" to be uploaded to Raspberry Pi Pico and then double click "19.2_Ultrasonic_Ranging.py".
 
 Ultrasonic_Ranging
 -----------------------------
@@ -182,7 +182,7 @@ Click "Run current script". Use the ultrasonic module to measure distance. As sh
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_Ultrasonic_Ranging/22.2_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.2_Ultrasonic_Ranging/19.2_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 1-13
@@ -190,7 +190,7 @@ The following is the program code:
 
 Import hcsr04 module.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_Ultrasonic_Ranging/22.2_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.2_Ultrasonic_Ranging/19.2_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 1-1
@@ -198,7 +198,7 @@ Import hcsr04 module.
 
 Define an ultrasonic object and associate with the pins.
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_Ultrasonic_Ranging/22.2_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.2_Ultrasonic_Ranging/19.2_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 4-4
@@ -212,7 +212,7 @@ Obtain the distance data returned from the ultrasonic ranging module.
 
 Obtain the ultrasonic data every 500 milliseconds and print them out in "Shell".
 
-.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/22.2_Ultrasonic_Ranging/22.2_Ultrasonic_Ranging.py
+.. literalinclude:: ../../../freenove_Kit/Python/Python_Codes/19.2_Ultrasonic_Ranging/19.2_Ultrasonic_Ranging.py
     :linenos: 
     :language: python
     :lines: 8-11
