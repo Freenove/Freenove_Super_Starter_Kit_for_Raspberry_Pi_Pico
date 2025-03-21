@@ -52,7 +52,6 @@ C language
    C/31_TCP_IP_(Only_for_Pico_W).rst
    C/32_Control_LED_with_Web_(Only_for_Pico_W).rst
    C/33_Bluetooth_(Only_for_Pico_W).rst
-   C/34_Bluetooth_Audio_(Only_for_Pico_W).rst
 
 .. toctree::
    :maxdepth: 1
